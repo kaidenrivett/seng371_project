@@ -1,5 +1,5 @@
 import {Grid, Card, TextField, Button} from "@mui/material";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 export default function Login () {
 
@@ -17,6 +17,9 @@ export default function Login () {
         console.log("Username is: " + username);
         console.log("Password is: " + password);
 
+        setUsername("");
+        setPassword("");
+
         //Send a request to backend to check whether username and password combination works
     }
 
@@ -24,14 +27,18 @@ export default function Login () {
             <Grid container alignItems="center" justifyContent="center">
                 <Grid item xs={12}>
                     <Card elevation={10} style={card_style}>
-                        <TextField style={text_field_style} label='Username' 
+                        <TextField style={text_field_style} 
+                                   label='Username' 
                                    placeholder='Enter username' 
-                                   onChange={(e) => setUsername(e.target.value)} 
+                                   onChange={(e) => setUsername(e.target.value)}
+                                   value={username} 
                                    fullWidth 
                                    required/>
-                        <TextField style={text_field_style} label='Password' 
+                        <TextField style={text_field_style} 
+                                    label='Password' 
                                     placeholder='Enter password' 
-                                    onChange={(e) => setPassword(e.target.value)} 
+                                    onChange={(e) => setPassword(e.target.value)}
+                                    value={password} 
                                     fullWidth 
                                     required/>
                         <Button type='submit' 
