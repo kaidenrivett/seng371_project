@@ -1,3 +1,4 @@
+import { browser, $, $$, expect } from '@wdio/globals'
 const { describe, it } = require('node:test')
 const LoginPage = require('./test/pageobjects/login.page.js')
 

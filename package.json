@@ -26,6 +26,7 @@
     "react-dom": "18.2.0",
     "typescript": "4.9.5"
   },
+
   "devDependencies": {
     "@wdio/allure-reporter": "^8.5.0",
     "@wdio/cli": "^8.5.5",
@@ -33,6 +34,7 @@
     "@wdio/mocha-framework": "^8.4.0",
     "@wdio/spec-reporter": "^8.4.0",
     "chromedriver": "^110.0.0",
-    "wdio-chromedriver-service": "^8.1.1"
+    "wdio-chromedriver-service": "^8.1.1",
+    "wdio-safaridriver-service": "^1.1.0"
   }
 }
