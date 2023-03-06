@@ -3,9 +3,9 @@ import {useState, useEffect} from "react";
 
 export default function Login () {
 
-    const card_style = {height:"30vh",width:"25vw", margin:"20px auto", padding : "20px"};
-    const button_style = {margin:'2vh 0'};
-    const text_field_style = {margin: "2vh 0"};
+    const card_style = {height:"auto", minHeight:"30vh", width:"25vw", margin:"20px auto", padding : "20px"};
+    const button_style = {margin:'1rem 0'};
+    const text_field_style = {margin: "1rem 0"};
 
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
