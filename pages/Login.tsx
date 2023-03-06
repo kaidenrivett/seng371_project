@@ -31,13 +31,15 @@ export default function Login () {
                         <TextField style={text_field_style} 
                                    label='Username' 
                                    placeholder='Enter username' 
+                                   id = "UsernameID"
                                    onChange={(e) => setUsername(e.target.value)}
                                    value={username} 
                                    fullWidth 
                                    required/>
                         <TextField style={text_field_style} 
                                     label='Password' 
-                                    placeholder='Enter password' 
+                                    placeholder='Enter password'
+                                    id = "PasswordID"
                                     onChange={(e) => setPassword(e.target.value)}
                                     value={password} 
                                     fullWidth 
@@ -45,6 +47,7 @@ export default function Login () {
                         <Button type='submit' 
                                 color='primary' 
                                 variant="contained" 
+                                id = "ButtonID"
                                 style={button_style} 
                                 onClick={handleLoginSubmit} 
                                 fullWidth>Sign in</Button>
