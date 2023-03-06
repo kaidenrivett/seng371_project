@@ -1,9 +1,9 @@
 import React from 'react'
-import Index from './index'
+import Login from '../../pages/Login'
 
-describe('<Index />', () => {
+describe('<Login />', () => {
   it('renders', () => {
     // see: https://on.cypress.io/mounting-react
-    cy.mount(<Index />)
+    cy.mount(<Login />)
   })
 })
