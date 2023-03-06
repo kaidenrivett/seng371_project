@@ -10,7 +10,8 @@ export default function Login () {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
 
-    const handleLoginSubmit = (event) => {
+    const handleLoginSubmit = (event: any) => {
+
         
         event.preventDefault();
 
