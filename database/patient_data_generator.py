@@ -5,8 +5,10 @@ import random
 
 first_name = []
 last_name = []
+generate_number = 100
+
 # Generate names create a 100 user sample data
-for i in range(100):
+for i in range(generate_number):
     first_name.append(names.get_full_name().split()[0])
     last_name.append(names.get_full_name().split()[1])
     # print(names.get_full_name())
@@ -22,7 +24,7 @@ department = ['medicine', 'surgery', 'gynaecology',
               'psychiatry', 'skin']
 # Generate health records for 100 patients
 health_records = []
-for i in range(1, 101):
+for i in range(1, generate_number+1):
     record = {}
     record['First Name'] = first_name[i-1]
     record['Last Name'] = last_name[i-1]
