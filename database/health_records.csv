@@ -1,1 +1,101 @@
-Patient ID,Age,Gender,Medical Condition,Medication,Dosage,Frequency
+First Name,Last Name,Patient ID,Age,Gender,Medical Condition,Medication,Dosage,Department
+Bryan,Taylor,1,76,Male,Cancer,Albuterol,4,medicine
+Richard,Tibbert,2,50,Male,Arthritis,Metformin,1,cardiology
+Kenneth,Keen,3,23,Female,High Blood Pressure,Lisinopril,1,neurology
+Neil,Featherston,4,34,Female,High Blood Pressure,Tamoxifen,1,cardiology
+Desiree,Garfield,5,63,Male,Asthma,Ibuprofen,3,ENT
+John,Mcclurg,6,85,Male,Cancer,Sertraline,2,ENT
+Kevin,Uhlman,7,46,Female,High Blood Pressure,Lisinopril,3,skin
+Robert,Malone,8,60,Male,High Blood Pressure,Ibuprofen,4,medicine
+Laura,Martinez,9,40,Male,Depression,Ibuprofen,3,medicine
+Doris,Parker,10,85,Male,High Blood Pressure,Sertraline,4,skin
+Michael,Mosby,11,56,Female,Cancer,Metformin,4,orthopaedics
+Susan,Tucker,12,22,Male,Arthritis,Sertraline,3,dental
+James,Ramsey,13,83,Male,High Blood Pressure,Lisinopril,2,psychiatry
+Emma,Rutland,14,32,Male,High Blood Pressure,Lisinopril,1,neurology
+Alice,Lee,15,65,Female,Cancer,Sertraline,1,dental
+Alice,Frazier,16,75,Male,Diabetes,Ibuprofen,3,dental
+Donn,Edwards,17,47,Male,Depression,Tamoxifen,3,gynaecology
+Catherine,Ligon,18,87,Female,Depression,Ibuprofen,4,psychiatry
+Linda,Ortega,19,31,Female,Diabetes,Lisinopril,4,ENT
+Rhonda,Peacemaker,20,82,Male,Diabetes,Ibuprofen,2,surgery
+William,Young,21,90,Female,Arthritis,Tamoxifen,3,skin
+Crystal,Coaxum,22,69,Male,Asthma,Albuterol,4,cardiology
+Gertrude,Ramirez,23,56,Male,Asthma,Albuterol,4,gynaecology
+Thomas,Shingler,24,69,Female,Cancer,Metformin,3,medicine
+Hattie,Zambrano,25,56,Female,Cancer,Ibuprofen,2,paediatrics
+Dorothy,Hamilton,26,22,Female,Asthma,Albuterol,2,orthopaedics
+Alice,Luu,27,30,Male,Cancer,Tamoxifen,1,orthopaedics
+Ronnie,Jackson,28,65,Male,Asthma,Lisinopril,1,surgery
+Thomas,Sikes,29,49,Female,Diabetes,Albuterol,1,ENT
+Susan,Ward,30,39,Female,Arthritis,Albuterol,2,psychiatry
+Robert,Martin,31,22,Female,Asthma,Metformin,2,ENT
+Gladys,Padilla,32,38,Female,Depression,Sertraline,2,medicine
+Mildred,Blankenship,33,83,Female,High Blood Pressure,Metformin,1,medicine
+Phyllis,Jeffery,34,25,Female,Depression,Tamoxifen,1,surgery
+Rodolfo,Hart,35,64,Female,High Blood Pressure,Ibuprofen,2,surgery
+Hannah,Vickers,36,59,Female,Asthma,Ibuprofen,3,obstetrics
+Willie,Sokoloski,37,83,Male,Diabetes,Ibuprofen,2,cardiology
+Tara,Milar,38,43,Female,Depression,Ibuprofen,3,psychiatry
+Lisa,Griffith,39,69,Female,Diabetes,Albuterol,3,eye
+Johnny,Wakefield,40,49,Male,Cancer,Sertraline,1,neurology
+Clyde,Humphries,41,82,Female,High Blood Pressure,Ibuprofen,1,ENT
+Misty,Mize,42,56,Male,Cancer,Metformin,2,psychiatry
+Consuelo,Williamson,43,51,Male,Diabetes,Albuterol,1,dental
+Stacy,Gibson,44,73,Male,Arthritis,Sertraline,3,gynaecology
+Nancy,Malone,45,68,Female,Depression,Tamoxifen,4,eye
+Joyce,Hilton,46,31,Female,Arthritis,Lisinopril,2,psychiatry
+Eva,Ballin,47,40,Male,High Blood Pressure,Sertraline,4,medicine
+Christine,Kendall,48,33,Female,Arthritis,Tamoxifen,3,skin
+Bert,Schrack,49,81,Male,Arthritis,Metformin,4,neurology
+Tina,Miller,50,68,Male,Asthma,Metformin,3,neurology
+Mary,Hickernell,51,90,Male,Cancer,Albuterol,2,ENT
+Rhonda,Jordan,52,41,Female,Diabetes,Albuterol,1,cardiology
+Tami,Buford,53,33,Male,Depression,Lisinopril,3,medicine
+Kathleen,Mccormick,54,70,Male,Arthritis,Sertraline,1,obstetrics
+Sherry,Fineran,55,53,Female,Cancer,Lisinopril,3,eye
+Stanley,Waits,56,75,Female,Depression,Ibuprofen,2,obstetrics
+Jeffrey,Williams,57,33,Male,Depression,Sertraline,2,orthopaedics
+Jacquelyn,Butler,58,32,Male,Asthma,Ibuprofen,2,paediatrics
+Helen,Moxley,59,46,Female,Arthritis,Tamoxifen,3,paediatrics
+Alexander,Smith,60,43,Female,Arthritis,Albuterol,2,obstetrics
+Natasha,Martin,61,30,Male,Diabetes,Sertraline,4,eye
+Andrea,Carter,62,81,Female,Diabetes,Lisinopril,3,dental
+Carol,Beltran,63,62,Male,Diabetes,Albuterol,3,surgery
+Ronald,White,64,82,Female,High Blood Pressure,Tamoxifen,2,gynaecology
+Amanda,Howton,65,34,Male,Diabetes,Sertraline,3,paediatrics
+Walter,Stein,66,55,Female,Arthritis,Lisinopril,3,medicine
+Steve,Garrett,67,60,Male,Arthritis,Tamoxifen,3,dental
+Lewis,Moore,68,83,Female,High Blood Pressure,Tamoxifen,2,medicine
+Joann,Borg,69,46,Female,Arthritis,Sertraline,4,dental
+Michael,Humphrey,70,22,Male,Cancer,Albuterol,1,eye
+Peter,Ramer,71,50,Female,Asthma,Albuterol,3,gynaecology
+Angela,Gaynor,72,60,Male,Depression,Metformin,2,obstetrics
+Lea,Lewis,73,38,Female,Asthma,Tamoxifen,4,gynaecology
+Kenneth,Yanchik,74,66,Male,Depression,Lisinopril,3,cardiology
+Donald,Forbes,75,53,Female,Asthma,Lisinopril,4,ENT
+Gordon,Garcia,76,45,Male,Depression,Albuterol,2,cardiology
+Linda,Lorenz,77,67,Male,Asthma,Metformin,4,medicine
+Tara,Davis,78,78,Female,Depression,Tamoxifen,1,gynaecology
+Erma,Elliott,79,84,Male,Asthma,Lisinopril,2,obstetrics
+William,Williams,80,23,Female,Depression,Sertraline,3,surgery
+Ana,David,81,89,Female,High Blood Pressure,Albuterol,1,skin
+Joseph,Lyman,82,57,Male,Diabetes,Albuterol,2,ENT
+Colleen,Karel,83,90,Male,Diabetes,Lisinopril,1,psychiatry
+Dennis,Miller,84,46,Male,Cancer,Lisinopril,2,ENT
+Julius,Rogers,85,32,Female,Depression,Albuterol,4,orthopaedics
+Christina,Anderson,86,85,Male,Asthma,Tamoxifen,4,surgery
+Amber,Peterman,87,85,Male,Cancer,Lisinopril,3,skin
+Marcia,Sooter,88,72,Male,Asthma,Lisinopril,4,medicine
+Marie,Riddle,89,23,Male,Depression,Ibuprofen,2,orthopaedics
+Garnett,Penny,90,73,Male,Asthma,Tamoxifen,4,psychiatry
+Floyd,Finke,91,20,Male,Depression,Lisinopril,4,cardiology
+Michael,Harris,92,36,Female,Cancer,Tamoxifen,1,orthopaedics
+Joanna,Oakes,93,69,Female,Asthma,Metformin,4,surgery
+Jessica,Harper,94,36,Female,Cancer,Ibuprofen,4,medicine
+Cheryl,Aguirre,95,46,Female,Depression,Lisinopril,1,obstetrics
+Meghan,Miller,96,20,Female,Arthritis,Albuterol,1,dental
+Steven,Whitesides,97,29,Female,Cancer,Ibuprofen,1,skin
+Laverne,Doss,98,21,Female,Diabetes,Ibuprofen,3,neurology
+Jim,Clay,99,34,Male,Diabetes,Sertraline,3,psychiatry
+Rebecca,Edwards,100,42,Female,Arthritis,Tamoxifen,2,orthopaedics
