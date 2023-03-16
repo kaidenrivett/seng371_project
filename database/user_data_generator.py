@@ -15,10 +15,14 @@ def get_random_string(min_length_password):
 def fileOutput(health_records, record):
     # Write the health records to a CSV file
     with open('app_users.csv', mode='w', newline='') as file:
-        writer = csv.DictWriter(file, fieldnames=['First Name','Last Name', 'Username','Password','Age', 'Gender','Role'])
+        writer = csv.DictWriter(file, fieldnames=['First Name','Last Name','Key','Username','Password','Age', 'Gender','Role'])
         writer.writeheader()
         for record in health_records:
             writer.writerow(record)
+#first letter of first name + last name + random num btw (0 - 9)
+def keyGenerator(first_name, last_name):
+    return first_name[0] + last_name + "" + str(random.randint(1,99))
+
 
 def main():
     first_name = []
@@ -26,7 +30,7 @@ def main():
     generate_number = 100
     username_collections = []
     password_collections = []
-    id = []
+    key_collections = []
     min_length_password = 6
     # Generate names create a 100 user sample data
     for i in range(generate_number):
@@ -36,8 +40,8 @@ def main():
         password = get_random_string(min_length_password)
         username_collections.append(username)
         password_collections.append(password)
-        # print(names.get_full_name())
-
+        key = keyGenerator(names.get_full_name().split()[0], names.get_full_name().split()[1])
+        key_collections.append(key)
 
     roles = ['IT', 'Doctor', 'Patient']
 
@@ -47,6 +51,7 @@ def main():
         record = {}
         record['First Name'] = first_name[i-1]
         record['Last Name'] = last_name[i-1]
+        record['Key'] = key_collections[i-1]
         record['Username'] = username_collections[i-1]
         record['Password'] = password_collections[i-1]
         record['Age'] = random.randint(18, 90)
