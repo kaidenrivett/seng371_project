@@ -10,7 +10,6 @@ def get_random_string(min_length_password):
     letters = string.ascii_lowercase
     result_str = ''.join(random.choice(letters) for i in range(string_len))
     return result_str
-    # print("Random string of length",string_len ,"is:", result_str)
 
 def fileOutput(health_records, record):
     # Write the health records to a CSV file
@@ -43,7 +42,7 @@ def main():
         key = keyGenerator(names.get_full_name().split()[0], names.get_full_name().split()[1])
         key_collections.append(key)
 
-    roles = ['IT', 'Doctor', 'Patient']
+    roles = ['Technician', 'Doctor', 'Patient']
 
     # Generate health records for 100 patients
     health_records = []
