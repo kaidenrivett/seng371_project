@@ -44,8 +44,8 @@ def main():
 
     roles = ['Technician', 'Doctor', 'Patient']
 
-    # Generate health records for 100 patients
-    health_records = []
+    # Generate 100 app users
+    app_users = []
     for i in range(1, generate_number+1):
         record = {}
         record['First Name'] = first_name[i-1]
@@ -56,8 +56,8 @@ def main():
         record['Age'] = random.randint(18, 90)
         record['Gender'] = random.choice(['Male', 'Female'])
         record['Role'] = random.choice(roles)
-        health_records.append(record)
-    fileOutput(health_records,record)
+        app_users.append(record)
+    fileOutput(app_users,record)
 
 if __name__ == "__main__":
     main()
