@@ -31,7 +31,7 @@ def main():
     password_collections = []
     key_collections = []
     min_length_password = 6
-    # Generate names create a 100 user sample data
+    # Generate names create a 100 users sample data
     for i in range(generate_number):
         first_name.append(names.get_full_name().split()[0])
         last_name.append(names.get_full_name().split()[1])
