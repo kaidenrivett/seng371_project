@@ -1,12 +1,11 @@
 import router from "next/router";
 import {useState, useEffect} from "react";
-import { Avatar, Container, Grid, Paper, Stack, Typography } from "@mui/material";
-import { padding } from "@mui/system";
+import { Avatar, Button, Container, Grid, Paper, Stack, Typography } from "@mui/material";
 
 export default function Patient() {
-  const [patient, setPatient] = useState(null);
+  // const [patient, setPatient] = useState(null);
   // const id = router.query.id;
-
+  
   const testPatient = {
     firstName: "Bryan",
     lastName: "Taylor",
@@ -18,6 +17,7 @@ export default function Patient() {
     dosage: 4,
     department: "medicine"
   }
+  const patient = testPatient;
 
   // useEffect(() => {
   //   fetch(`/api/patient/${id}`)
@@ -25,11 +25,12 @@ export default function Patient() {
   //     .then((data) => setPatient(data));
   // }, [id]);
 
-  useEffect(() => {
-    setPatient(testPatient)
-  }, []);
+  // useEffect(() => {
+  //   setPatient(testPatient)
+  // }, []);
 
   return (
+    patient ? 
     <Container maxWidth="md" >
       <Grid container spacing={2}>
         <Grid item xs={12}>
@@ -37,7 +38,6 @@ export default function Patient() {
           {/* <Typography variant="h3">Patient Information</Typography> */}
           <Stack direction="row" className="p-6">
             <Avatar
-              alt={patient.firstName ?? ''}
               sx={{ width: 150, height: 150, margin: 2 }}
             />
             <Container sx={{marginTop: "auto", marginBottom: "auto"}}>
@@ -53,28 +53,47 @@ export default function Patient() {
                 variant="subtitle1"
                 gutterBottom
               >
-                  {patient.id}
+                  Gender: {patient.gender}
               </Typography>
               <Typography
                 component="p"
                 variant="p"
                 gutterBottom
               >
-                  {patient.age}
+                  Age: {patient.age}
+              </Typography>
+              <Typography
+                component="p"
+                variant="p"
+                gutterBottom
+              >
+                  Department: {patient.department}
               </Typography>
             </Container>
           </Stack>
         </Paper>
         </Grid>
+          <Grid item xs={6}>
+            <Paper elevation={8} sx={{borderRadius: "12px"}} className="p-6 my-2">
+              <Container>
+                <Typography variant="h3">Condition</Typography>
+                {patient && (
+                    <Typography variant="h4">{patient.medicalCondition}</Typography>
+                )}
+              </Container>
+            </Paper>
+          </Grid>
         <Grid item xs={6}>
-        <Paper elevation={8} sx={{borderRadius: "12px"}} >
-            <Typography variant="h1">Patient2</Typography>
-            {patient && (
-                <Typography variant="h2">{`${patient.firstName} ${patient.lastName}`}</Typography>
-            )}
-        </Paper>
+          <Paper elevation={8} sx={{borderRadius: "12px"}} >
+            <Container>
+              <Typography variant="h3">Medication</Typography>
+              <Button variant="outlined" sx={{my: 2}}>
+                <Typography variant="h6">{patient.medication}</Typography>
+              </Button>
+            </Container>
+          </Paper>
         </Grid>
       </Grid>
-    </Container>
+    </Container> : null
   );
 }
