@@ -33,22 +33,22 @@ export default function PatientList({role, department}) {
         {
             field: 'id',
             headerName: "Patient ID",
-            width: 50
+            width: 100
         },
         {
             field: 'First Name',
             headerName: 'First Name',
-            width: 100
+            width: 150
         },
         {
             field: 'Last Name',
             headerName: 'Last Name',
-            width: 100
+            width: 150
         },
         {
             field: 'Age',
             headerName: 'Age',
-            width: 50
+            width: 100
         },
         {
             field: 'Gender',
@@ -58,7 +58,7 @@ export default function PatientList({role, department}) {
         {
             field: 'Medical Condition',
             headerName: 'Medical Condition',
-            width: 100
+            width: 200
         },
         {
             field: 'Medication',
@@ -73,11 +73,11 @@ export default function PatientList({role, department}) {
         {
             field: 'Department',
             headerName: 'Department',
-            width: 100
+            width: 200
         },
         {
             field: "Actions",
-            width: 50,
+            width: 90,
             renderCell: (params) => {
                 return (
                     <div style={{cursor: "pointer"}}>
@@ -291,7 +291,7 @@ export default function PatientList({role, department}) {
 
     return (
         isDoctor ? 
-        <Container maxWidth="md" sx={{my: "2rem"}}>
+        <Container maxWidth="xl" sx={{my: "2rem"}}>
             <Grid container spacing={2}>
                 <Grid item xs={12}>
                     <Paper elevation={8} sx={{borderRadius: "12px"}} className="h-500 p-6 my-2">
