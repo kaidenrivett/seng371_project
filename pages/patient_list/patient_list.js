@@ -9,7 +9,7 @@ export default function PatientList({role, department}) {
 
     
     const [isDoctor, setIsDoctor] = useState(true);
-    const [dept, setDept] = useState("cardiology");
+    const [dept, setDept] = useState("");
 
 
     const PatientLink = ({index}) => {
@@ -58,12 +58,12 @@ export default function PatientList({role, department}) {
         {
             field: 'Medical Condition',
             headerName: 'Medical Condition',
-            width: 200
+            width: 250
         },
         {
             field: 'Medication',
             headerName: 'Medication',
-            width: 100
+            width: 150
         },
         {
             field: 'Dosage',
@@ -302,7 +302,7 @@ export default function PatientList({role, department}) {
                             initialState={{
                                 pagination: {
                                     paginationModel: {
-                                        pageSize: 10
+                                        pageSize: 14
                                     }
                                 },
                                 filter: {
