@@ -1,101 +1,101 @@
-First Name,Last Name,Patient ID,Age,Gender,Medical Condition,Medication,Dosage,Department
-Edith,Jantzen,1,44,Male,Cancer,Albuterol,4,neurology
-Edith,Miller,2,28,Male,Arthritis,Lisinopril,1,paediatrics
-William,Nall,3,54,Female,Arthritis,Metformin,1,paediatrics
-Kenneth,Richey,4,36,Male,High Blood Pressure,Lisinopril,1,skin
-Jack,Patterson,5,86,Female,Depression,Metformin,4,obstetrics
-Ernest,Mendoza,6,53,Male,Depression,Metformin,3,medicine
-Margaret,Waldorf,7,19,Male,Diabetes,Ibuprofen,1,skin
-Jacob,Duff,8,89,Female,Cancer,Tamoxifen,1,neurology
-Jack,Escalante,9,90,Female,Asthma,Tamoxifen,2,eye
-Mae,Miller,10,80,Male,Asthma,Lisinopril,2,skin
-Tommy,Howard,11,49,Female,High Blood Pressure,Albuterol,3,psychiatry
-Sammy,Haney,12,19,Male,Cancer,Lisinopril,1,psychiatry
-Allyson,Williams,13,56,Female,Depression,Sertraline,2,eye
-Frank,Grant,14,90,Male,Cancer,Sertraline,2,neurology
-Karen,Montilla,15,60,Male,Depression,Metformin,2,obstetrics
-Arthur,Crowder,16,30,Male,High Blood Pressure,Lisinopril,4,psychiatry
-Laura,Silva,17,58,Male,Cancer,Albuterol,4,neurology
-Consuelo,Miller,18,37,Male,Depression,Ibuprofen,3,skin
-Angelica,March,19,73,Male,Diabetes,Sertraline,3,medicine
-Mary,Green,20,71,Male,Asthma,Ibuprofen,2,gynaecology
-Pearl,Kennett,21,70,Male,Depression,Ibuprofen,2,skin
-Nell,Medina,22,32,Female,Depression,Ibuprofen,4,paediatrics
-Robert,Wedekind,23,83,Male,Diabetes,Tamoxifen,2,ENT
-Mary,Pooley,24,71,Female,Asthma,Tamoxifen,1,orthopaedics
-Willie,White,25,68,Female,Arthritis,Lisinopril,4,obstetrics
-Thomas,Richard,26,25,Female,Cancer,Lisinopril,2,surgery
-Royce,Quijano,27,89,Female,Arthritis,Tamoxifen,4,neurology
-Clarence,Butcher,28,28,Male,Diabetes,Tamoxifen,4,eye
-Sallie,Duboise,29,72,Male,Diabetes,Metformin,4,orthopaedics
-Erin,Robbins,30,63,Male,Asthma,Albuterol,1,eye
-Donald,Wotring,31,74,Female,Cancer,Lisinopril,2,psychiatry
-Mary,Wray,32,52,Female,Asthma,Sertraline,1,paediatrics
-Christopher,Mccarty,33,27,Female,Asthma,Tamoxifen,4,skin
-Katherine,Holliday,34,32,Male,Cancer,Lisinopril,3,psychiatry
-Brad,Taft,35,49,Male,Depression,Tamoxifen,2,medicine
-Katrina,Hadiaris,36,24,Female,Diabetes,Tamoxifen,1,dental
-Mary,Austin,37,57,Female,Arthritis,Ibuprofen,1,psychiatry
-Shawn,Donohue,38,39,Female,Cancer,Ibuprofen,1,dental
-Erica,Peterson,39,88,Male,Depression,Ibuprofen,4,dental
-Karen,Jensen,40,73,Female,Arthritis,Lisinopril,1,surgery
-Donnell,Hurst,41,29,Female,Arthritis,Sertraline,3,paediatrics
-Nancy,Evans,42,54,Male,Diabetes,Ibuprofen,1,obstetrics
-Kayla,Whitmore,43,52,Male,Asthma,Lisinopril,4,eye
-Lloyd,Gibb,44,59,Male,Diabetes,Metformin,1,eye
-Jerold,Cox,45,26,Female,Cancer,Sertraline,2,eye
-Jimmy,Tabor,46,20,Male,Asthma,Lisinopril,3,medicine
-Candice,Williams,47,66,Female,Arthritis,Tamoxifen,3,surgery
-Guadalupe,Krebbs,48,86,Male,Arthritis,Albuterol,1,gynaecology
-Louise,Dryden,49,75,Male,Arthritis,Metformin,1,neurology
-Brandy,Paul,50,20,Female,Diabetes,Albuterol,1,orthopaedics
-Ronnie,Allison,51,52,Female,Depression,Sertraline,4,eye
-Eula,Long,52,46,Male,Cancer,Metformin,3,obstetrics
-Peter,Hayward,53,60,Male,Diabetes,Ibuprofen,1,obstetrics
-James,Williams,54,79,Female,Depression,Sertraline,4,obstetrics
-Ana,Nelson,55,75,Male,Arthritis,Sertraline,1,cardiology
-Sharon,Calhoun,56,78,Female,Depression,Tamoxifen,4,orthopaedics
-Katrina,Rodgers,57,59,Female,Asthma,Tamoxifen,2,ENT
-Benjamin,Schwartz,58,60,Male,High Blood Pressure,Lisinopril,1,eye
-Cindy,Fox,59,19,Male,Asthma,Albuterol,2,neurology
-Kristin,Barnett,60,72,Female,High Blood Pressure,Lisinopril,1,cardiology
-Carlos,Ramos,61,31,Female,Arthritis,Metformin,1,paediatrics
-Felix,White,62,70,Female,Cancer,Sertraline,4,skin
-Gloria,Ellison,63,45,Male,Diabetes,Albuterol,1,orthopaedics
-Theresa,Ephriam,64,42,Female,High Blood Pressure,Metformin,3,dental
-Mary,Andrzejewski,65,70,Female,High Blood Pressure,Metformin,4,neurology
-Jeff,Ulibarri,66,82,Male,Cancer,Ibuprofen,1,obstetrics
-Henry,Jones,67,72,Female,Cancer,Ibuprofen,1,eye
-Charles,Wisham,68,59,Male,Depression,Ibuprofen,3,surgery
-Amy,Bass,69,32,Male,Cancer,Lisinopril,2,cardiology
-Maragret,Edwards,70,53,Female,Arthritis,Ibuprofen,1,gynaecology
-Monica,Jones,71,67,Male,Depression,Sertraline,1,cardiology
-Terri,Valles,72,34,Male,Depression,Albuterol,4,surgery
-Carol,Bowen,73,50,Male,Cancer,Ibuprofen,3,surgery
-Ruth,Webb,74,53,Male,High Blood Pressure,Sertraline,1,eye
-Barry,Staton,75,22,Female,Asthma,Ibuprofen,2,ENT
-Helen,Dorman,76,38,Female,Depression,Sertraline,4,surgery
-Fidela,Almeida,77,24,Male,Asthma,Ibuprofen,3,eye
-Heather,Newton,78,72,Female,Diabetes,Tamoxifen,4,obstetrics
-Cassandra,Martir,79,90,Male,Diabetes,Sertraline,4,paediatrics
-Dennis,Taylor,80,75,Female,Asthma,Metformin,3,dental
-Karen,Rodriguez,81,68,Male,Cancer,Sertraline,3,paediatrics
-Donna,Jetton,82,86,Male,Asthma,Sertraline,4,medicine
-Charles,Newton,83,80,Female,High Blood Pressure,Albuterol,4,ENT
-Craig,Mitchell,84,69,Male,Asthma,Tamoxifen,4,eye
-Mary,Montgomery,85,34,Male,Arthritis,Tamoxifen,1,obstetrics
-Morgan,Eure,86,75,Male,High Blood Pressure,Tamoxifen,1,ENT
-Wayne,Vasquez,87,56,Female,High Blood Pressure,Metformin,4,orthopaedics
-Elliot,Washburn,88,45,Male,Depression,Tamoxifen,2,paediatrics
-Laura,Owen,89,28,Female,Asthma,Albuterol,4,surgery
-Charley,Slagle,90,61,Female,Cancer,Albuterol,3,obstetrics
-Mary,Chambers,91,62,Female,Arthritis,Ibuprofen,3,psychiatry
-Christopher,Fields,92,68,Female,Diabetes,Sertraline,2,dental
-Janice,Dominguez,93,44,Male,Diabetes,Metformin,4,cardiology
-Ethan,Morrow,94,29,Female,Cancer,Sertraline,4,eye
-Andrew,Briones,95,81,Female,Asthma,Ibuprofen,4,psychiatry
-Laura,Parker,96,89,Female,Diabetes,Ibuprofen,2,surgery
-Eva,Botz,97,80,Male,Depression,Metformin,2,obstetrics
-William,Mcknight,98,80,Male,Arthritis,Metformin,1,surgery
-John,Giles,99,59,Female,Arthritis,Ibuprofen,1,eye
-Kory,Linder,100,25,Male,Depression,Ibuprofen,4,eye
+First Name,Last Name,Patient ID,Age,Gender,Height,Weight,Medical Condition,Medication,Dosage,Department,Last Visit,Encounter Description
+James,Selkirk,1,48,Female,5.2',120lbs,High Blood Pressure,Sertraline,1,dental,2022-09-24,Encounter for symptom
+Haley,Alberts,2,90,Male,5.9',150lbs,Diabetes,Albuterol,3,ENT,2022-12-15,Patient encounter procedure
+Delbert,Russell,3,43,Female,6.0',110lbs,Arthritis,Sertraline,1,neurology,2022-01-30,Patient encounter procedure
+Elena,Terrell,4,42,Male,5.6',130lbs,Cancer,Metformin,3,medicine,2022-12-25,Well child visit (procedure)
+William,Bennett,5,27,Female,5.8',110lbs,High Blood Pressure,Lisinopril,4,neurology,2022-06-08,Consultation for treatment
+Oscar,Schulz,6,76,Female,5.6',120lbs,High Blood Pressure,Metformin,2,psychiatry,2022-02-07,Well child visit (procedure)
+Kelsey,Sparrow,7,50,Female,6.0',140lbs,High Blood Pressure,Albuterol,4,ENT,2022-02-18,Well child visit (procedure)
+Phyllis,Bossey,8,30,Male,6.2',140lbs,High Blood Pressure,Sertraline,2,orthopaedics,2022-11-14,General examination of patient (procedure)
+Lawrence,Adams,9,67,Female,6.1',130lbs,High Blood Pressure,Lisinopril,2,paediatrics,2022-12-19,Patient encounter procedure
+Amos,Young,10,87,Female,5.4',110lbs,Diabetes,Lisinopril,3,orthopaedics,2022-07-17,Urgent care clinic (procedure)
+James,Weston,11,36,Male,5.8',150lbs,High Blood Pressure,Tamoxifen,4,surgery,2022-06-26,Urgent care clinic (procedure)
+Sandra,Lawhorn,12,32,Female,5.8',130lbs,Cancer,Metformin,4,neurology,2022-12-29,Consultation for treatment
+Gerald,Whipple,13,28,Male,5.5',150lbs,Cancer,Metformin,2,dental,2022-07-01,Urgent care clinic (procedure)
+Valerie,Newstead,14,28,Male,5.7',150lbs,Cancer,Albuterol,2,obstetrics,2022-05-20,Emergency room admission (procedure)
+Juanita,Leonard,15,38,Female,5.6',130lbs,Asthma,Tamoxifen,4,surgery,2022-07-07,Emergency room admission (procedure)
+Theresa,Robinson,16,88,Female,5.4',140lbs,Diabetes,Metformin,3,gynaecology,2022-07-22,Patient encounter procedure
+Emma,Edwards,17,32,Male,5.7',130lbs,Diabetes,Metformin,3,surgery,2022-05-08,Emergency room admission (procedure)
+Art,White,18,50,Female,5.6',150lbs,Depression,Tamoxifen,3,neurology,2022-02-05,Urgent care clinic (procedure)
+Ashley,Rankin,19,56,Female,5.7',150lbs,Depression,Ibuprofen,1,paediatrics,2022-09-21,Emergency room admission (procedure)
+Chester,Mcconkey,20,59,Female,6.0',130lbs,Asthma,Lisinopril,3,psychiatry,2022-03-07,General examination of patient (procedure)
+Jacob,Webster,21,63,Female,5.7',140lbs,High Blood Pressure,Ibuprofen,3,eye,2022-11-12,General examination of patient (procedure)
+Eva,Lau,22,58,Female,6.0',120lbs,High Blood Pressure,Sertraline,1,eye,2022-03-21,General examination of patient (procedure)
+Robert,Lerud,23,34,Male,5.7',150lbs,Asthma,Tamoxifen,2,ENT,2022-10-16,Well child visit (procedure)
+Hilda,Basham,24,68,Female,5.6',110lbs,Diabetes,Sertraline,2,neurology,2022-08-21,Patient encounter procedure
+Brian,Hackworth,25,67,Male,5.3',130lbs,Asthma,Metformin,2,dental,2022-05-20,Patient encounter procedure
+Hector,Stewart,26,65,Female,6.2',130lbs,High Blood Pressure,Albuterol,2,eye,2022-07-10,General examination of patient (procedure)
+Denise,Moore,27,53,Male,5.6',100lbs,Asthma,Metformin,4,cardiology,2022-06-05,Encounter for symptom
+John,Simmions,28,84,Male,5.2',150lbs,Diabetes,Tamoxifen,2,neurology,2022-07-22,General examination of patient (procedure)
+Christine,Plott,29,70,Male,5.8',110lbs,Depression,Sertraline,3,neurology,2022-08-05,General examination of patient (procedure)
+Taryn,Reed,30,40,Female,5.9',140lbs,Depression,Lisinopril,4,surgery,2022-11-06,Emergency room admission (procedure)
+Lisa,Kaune,31,22,Female,5.7',110lbs,Cancer,Lisinopril,3,cardiology,2022-05-24,Well child visit (procedure)
+Shawn,Henriquez,32,83,Female,5.7',100lbs,Depression,Sertraline,1,ENT,2022-07-08,General examination of patient (procedure)
+Emma,Mccroy,33,38,Male,5.7',140lbs,Cancer,Lisinopril,3,medicine,2022-11-12,Emergency room admission (procedure)
+Kenneth,Burgess,34,68,Female,5.6',110lbs,Asthma,Ibuprofen,4,orthopaedics,2022-11-04,Well child visit (procedure)
+Mary,Jackson,35,89,Male,5.8',130lbs,Cancer,Ibuprofen,2,surgery,2022-12-26,Consultation for treatment
+John,Salas,36,78,Male,5.8',150lbs,Arthritis,Albuterol,1,ENT,2022-11-28,Consultation for treatment
+Julia,Broaddus,37,29,Female,6.2',130lbs,Cancer,Sertraline,1,dental,2022-08-26,Emergency room admission (procedure)
+Manuel,Tilley,38,21,Male,5.6',150lbs,Asthma,Lisinopril,2,neurology,2022-08-03,General examination of patient (procedure)
+Edith,Roberts,39,66,Female,5.8',150lbs,Asthma,Ibuprofen,3,gynaecology,2022-05-28,Well child visit (procedure)
+Johnny,Matthews,40,35,Female,5.6',150lbs,Arthritis,Lisinopril,2,orthopaedics,2022-07-08,Emergency room admission (procedure)
+Gladys,Kiner,41,64,Male,5.7',130lbs,High Blood Pressure,Tamoxifen,1,gynaecology,2022-09-09,Consultation for treatment
+Roberta,Cornelia,42,58,Female,6.0',100lbs,Cancer,Ibuprofen,3,eye,2022-04-11,Encounter for symptom
+Randy,Trump,43,61,Male,5.9',140lbs,Diabetes,Lisinopril,4,surgery,2022-04-12,Patient encounter procedure
+Victor,Scerra,44,31,Male,5.3',140lbs,High Blood Pressure,Lisinopril,1,paediatrics,2022-02-11,Patient encounter procedure
+Robbie,Brison,45,86,Female,5.5',110lbs,Arthritis,Albuterol,3,paediatrics,2022-05-02,Well child visit (procedure)
+William,Moutoux,46,79,Female,5.5',140lbs,Depression,Sertraline,3,cardiology,2022-03-22,Emergency room admission (procedure)
+Kenneth,Samson,47,68,Female,5.7',150lbs,Arthritis,Metformin,2,gynaecology,2022-08-01,Emergency room admission (procedure)
+Maria,Childress,48,74,Female,5.8',130lbs,Depression,Lisinopril,2,dental,2022-08-24,Encounter for symptom
+Martin,Lora,49,21,Female,5.2',140lbs,Asthma,Sertraline,2,neurology,2022-09-16,Encounter for symptom
+Phyllis,Kendrick,50,58,Female,5.6',130lbs,Asthma,Metformin,2,neurology,2022-07-27,Emergency room admission (procedure)
+David,Mero,51,71,Female,5.7',140lbs,Diabetes,Metformin,1,orthopaedics,2022-09-09,Well child visit (procedure)
+Beatrice,Rubio,52,81,Male,5.7',130lbs,Asthma,Metformin,1,obstetrics,2022-02-03,General examination of patient (procedure)
+Juanita,Music,53,60,Male,5.4',120lbs,Diabetes,Tamoxifen,1,eye,2022-09-29,General examination of patient (procedure)
+Heather,Villanueva,54,18,Female,5.7',130lbs,Diabetes,Albuterol,3,eye,2022-02-21,Encounter for symptom
+Rachel,Stachura,55,80,Female,5.9',110lbs,Asthma,Ibuprofen,4,surgery,2022-04-27,Consultation for treatment
+Eddie,Gallaher,56,46,Male,5.9',110lbs,Asthma,Ibuprofen,2,psychiatry,2022-03-08,General examination of patient (procedure)
+Christine,Cunningham,57,42,Male,5.7',130lbs,Arthritis,Lisinopril,3,paediatrics,2022-02-09,Patient encounter procedure
+Robert,Mackey,58,90,Female,6.1',110lbs,Depression,Albuterol,3,cardiology,2022-07-15,Emergency room admission (procedure)
+Ramona,Aker,59,90,Female,5.9',130lbs,Cancer,Tamoxifen,4,cardiology,2022-08-31,General examination of patient (procedure)
+Mary,Fuller,60,41,Female,5.9',110lbs,High Blood Pressure,Lisinopril,3,eye,2022-08-15,Consultation for treatment
+George,Polit,61,71,Male,5.6',140lbs,Arthritis,Tamoxifen,1,medicine,2022-07-27,Urgent care clinic (procedure)
+Jeanne,Rice,62,53,Male,5.4',140lbs,Asthma,Ibuprofen,4,paediatrics,2022-05-31,General examination of patient (procedure)
+Jacqueline,Kaune,63,74,Female,5.9',130lbs,Cancer,Tamoxifen,1,psychiatry,2022-05-06,Emergency room admission (procedure)
+Joshua,Britton,64,76,Female,5.7',140lbs,Diabetes,Ibuprofen,4,medicine,2022-01-16,Emergency room admission (procedure)
+Francis,Delaine,65,61,Male,5.9',100lbs,Diabetes,Albuterol,3,dental,2022-02-17,Consultation for treatment
+Penny,Overton,66,45,Male,5.8',110lbs,Asthma,Lisinopril,4,eye,2022-08-20,Consultation for treatment
+Joseph,Kezar,67,85,Male,6.0',120lbs,High Blood Pressure,Metformin,4,dental,2022-02-16,Emergency room admission (procedure)
+John,Hiestand,68,50,Female,5.5',140lbs,Cancer,Tamoxifen,4,eye,2022-12-13,Patient encounter procedure
+Kelly,Osorio,69,74,Male,5.7',150lbs,Diabetes,Ibuprofen,2,obstetrics,2022-05-22,Urgent care clinic (procedure)
+Brandon,Marett,70,79,Female,5.7',140lbs,Depression,Metformin,3,paediatrics,2022-08-09,Encounter for symptom
+Kent,Garcia,71,63,Male,5.7',120lbs,Depression,Lisinopril,4,ENT,2022-04-18,Urgent care clinic (procedure)
+William,Hanson,72,90,Female,6.0',150lbs,Depression,Tamoxifen,4,dental,2022-04-01,Emergency room admission (procedure)
+Leticia,Moore,73,64,Male,5.7',140lbs,High Blood Pressure,Tamoxifen,1,ENT,2022-11-07,Encounter for symptom
+David,Gainey,74,67,Female,5.3',100lbs,Depression,Ibuprofen,2,skin,2022-07-06,Well child visit (procedure)
+Debra,Barry,75,58,Male,5.3',140lbs,Diabetes,Sertraline,4,skin,2022-03-02,Patient encounter procedure
+Katherine,Rann,76,74,Male,5.7',130lbs,Cancer,Ibuprofen,2,surgery,2022-11-15,Consultation for treatment
+Vernon,Boyland,77,74,Female,5.7',110lbs,Asthma,Lisinopril,2,neurology,2022-12-18,Well child visit (procedure)
+Lois,Stammer,78,37,Male,5.6',140lbs,Diabetes,Tamoxifen,2,skin,2022-08-07,Encounter for symptom
+Mike,Hunt,79,24,Female,5.8',150lbs,Depression,Albuterol,2,dental,2022-05-31,Urgent care clinic (procedure)
+Marion,Foster,80,66,Female,5.7',140lbs,Arthritis,Tamoxifen,3,skin,2022-04-06,General examination of patient (procedure)
+Joseph,Byrge,81,56,Male,5.9',130lbs,Diabetes,Lisinopril,4,psychiatry,2022-07-11,Emergency room admission (procedure)
+Blanca,Mcgovern,82,86,Female,5.9',150lbs,Cancer,Tamoxifen,2,surgery,2022-09-24,Emergency room admission (procedure)
+Stephen,Dawkins,83,70,Male,5.1',110lbs,High Blood Pressure,Sertraline,2,ENT,2022-01-27,Encounter for symptom
+Fannie,Ramirez,84,65,Male,5.5',110lbs,Diabetes,Ibuprofen,1,surgery,2022-04-24,Consultation for treatment
+Boyd,Peralta,85,29,Female,5.8',150lbs,Depression,Tamoxifen,4,surgery,2022-03-29,Patient encounter procedure
+David,Hall,86,71,Male,5.2',100lbs,Arthritis,Sertraline,2,neurology,2022-11-26,General examination of patient (procedure)
+Phyllis,Cherry,87,49,Female,5.6',140lbs,Depression,Albuterol,4,gynaecology,2022-11-03,Well child visit (procedure)
+Dean,Anthony,88,90,Female,5.3',140lbs,Diabetes,Albuterol,1,psychiatry,2022-09-20,Encounter for symptom
+Leigh,Rueda,89,70,Female,6.2',150lbs,High Blood Pressure,Tamoxifen,1,obstetrics,2022-01-08,Emergency room admission (procedure)
+Gary,Lurvey,90,76,Male,5.2',130lbs,Asthma,Sertraline,1,psychiatry,2022-02-02,General examination of patient (procedure)
+Lannie,Carr,91,28,Female,6.0',110lbs,Arthritis,Tamoxifen,2,orthopaedics,2022-12-22,Consultation for treatment
+Michelle,Murphy,92,68,Male,5.7',100lbs,Asthma,Albuterol,4,neurology,2022-06-25,General examination of patient (procedure)
+Kevin,Torain,93,25,Male,6.0',120lbs,Cancer,Metformin,1,gynaecology,2022-07-04,Encounter for symptom
+Dennis,Buss,94,23,Female,5.7',130lbs,Asthma,Tamoxifen,1,dental,2022-02-17,Patient encounter procedure
+Arthur,Jordan,95,86,Female,5.9',100lbs,High Blood Pressure,Lisinopril,3,orthopaedics,2022-09-12,Urgent care clinic (procedure)
+Terrance,Hylton,96,71,Male,6.0',120lbs,Arthritis,Lisinopril,2,paediatrics,2022-01-04,Patient encounter procedure
+Austin,Rogers,97,87,Female,5.6',140lbs,Diabetes,Ibuprofen,1,surgery,2022-09-24,Urgent care clinic (procedure)
+Robert,Johnson,98,63,Male,6.2',150lbs,High Blood Pressure,Ibuprofen,2,psychiatry,2022-10-10,Emergency room admission (procedure)
+Alma,Distasio,99,44,Female,5.4',140lbs,Diabetes,Sertraline,2,orthopaedics,2022-07-09,Patient encounter procedure
+Robert,Sanders,100,40,Female,5.4',110lbs,Asthma,Ibuprofen,2,paediatrics,2022-01-22,Urgent care clinic (procedure)
