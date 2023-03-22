@@ -33,6 +33,13 @@ def main():
                 'obstetrics','paediatrics','eye','ENT',
                 'dental', 'orthopaedics', 'neurology', 'cardiology',
                 'psychiatry', 'skin']
+    # TODO add random addr
+                
+    # TODO add measurements (height and weight)  
+              
+    # TODO add encounters columns (data, encounter: doing well or not well)
+
+
     # Generate health records for 100 patients
     health_records = []
     for i in range(1, generate_number+1):

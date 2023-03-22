@@ -14,7 +14,7 @@ def get_random_string(min_length_password):
 def fileOutput(health_records, record):
     # Write the health records to a CSV file
     with open('app_users.csv', mode='w', newline='') as file:
-        writer = csv.DictWriter(file, fieldnames=['First Name','Last Name','Key','Username','Password','Age', 'Gender','Role'])
+        writer = csv.DictWriter(file, fieldnames=['First Name','Last Name','Key','Username','Password','Age', 'Gender','Role','Department'])
         writer.writeheader()
         for record in health_records:
             writer.writerow(record)
@@ -31,6 +31,14 @@ def main():
     password_collections = []
     key_collections = []
     min_length_password = 6
+     
+
+    # TODO add department columns (for doctor and patient only) 
+    department = ['medicine', 'surgery', 'gynaecology',
+            'obstetrics','paediatrics','eye','ENT',
+            'dental', 'orthopaedics', 'neurology', 'cardiology',
+            'psychiatry', 'skin']
+    
     # Generate names create a 100 users sample data
     for i in range(generate_number):
         first_name.append(names.get_full_name().split()[0])
@@ -55,7 +63,14 @@ def main():
         record['Password'] = password_collections[i-1]
         record['Age'] = random.randint(18, 90)
         record['Gender'] = random.choice(['Male', 'Female'])
-        record['Role'] = random.choice(roles)
+        obj_role = random.choice(roles)
+        record['Role'] = obj_role 
+        if obj_role == 'Doctor' or obj_role == 'Patient':
+            record['Department'] = random.choice(department)
+        else:
+            record['Department'] = 'Null'
+
+
         app_users.append(record)
     fileOutput(app_users,record)
 
