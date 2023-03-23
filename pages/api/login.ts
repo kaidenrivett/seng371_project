@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-import { getUser, JWT_KEY } from "@lib/auth";
+import { getUserFromDb, JWT_KEY } from "@lib/auth";
 import { SignJWT } from 'jose';
 
 type RequestData = {
@@ -33,7 +33,7 @@ export default async function handler(
         return;
     }
 
-    let jwtClaims = getUser(userData.user, userData.pass);
+    let jwtClaims = getUserFromDb(userData.user, userData.pass);
 
     // Login failed
     if (jwtClaims == null) {
