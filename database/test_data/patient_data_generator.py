@@ -4,8 +4,9 @@ import csv
 import random
 from datetime import date, timedelta
 from random_date_generator import *
+from user_data_generator import *
 
-def name_generator(generate_number):
+def Name_generator(generate_number):
     first_name = []
     last_name = []
     for i in range(generate_number):
@@ -15,16 +16,55 @@ def name_generator(generate_number):
 
 
 # Write the health records to a CSV file
-def fileOutput(health_records,record):
+def FileOutput(health_records):
     with open('health_records.csv', mode='w', newline='') as file:
         writer = csv.DictWriter(file, fieldnames=['First Name','Last Name','Patient ID', 'Age', 'Gender', 'Height', 'Weight','Medical Condition', 'Medication', 'Dosage', 'Department','Last Visit','Encounter Description'])
         writer.writeheader()
         for record in health_records:
             writer.writerow(record)
-    
-def main():
+
+
+def GetRecordsForAppUsers(health_records):
+    print(health_records[0])
+    print(health_records[1])
+    print(health_records[2])
+
+    patient_collections_appusers = []
+    min_length_password = 6
+    department = ['medicine', 'surgery', 'gynaecology',
+            'obstetrics','paediatrics','eye','ENT',
+            'dental', 'orthopaedics', 'neurology', 'cardiology',
+            'psychiatry', 'skin']
+    i = 0
+    for record in health_records:  
+        element = {}
+        element['First Name'] = record['First Name']
+        element['Last Name'] = record['Last Name']
+        element['Key'] = keyGenerator(record['First Name'],record['Last Name'])
+        element['Username'] = get_random_string(min_length_password)
+        element['Password'] = get_random_string(min_length_password)
+        element['Age'] = record['Age']
+        element['Gender'] = record['Gender']
+        element['Role'] = 'Patient'
+        element['Department'] = random.choice(department)
+        patient_collections_appusers.append(element)
+        i = i + 1
+    print(patient_collections_appusers)
+    return patient_collections_appusers
+
+# append patient records to app_users collections
+def AppendToUserCollections(health_records):
+    # Get patient records based on app_users format
+    patient_collections_appusers = GetRecordsForAppUsers(health_records)
+    with open('app_users.csv', mode='a', newline='') as file:
+        writer = csv.DictWriter(file,fieldnames=['First Name','Last Name','Key','Username','Password','Age', 'Gender','Role','Department'])
+        writer.writeheader()
+        for record in patient_collections_appusers:
+            writer.writerow(record)
+
+def BuildRecords():
     generate_number = 100
-    first_name , last_name = name_generator(generate_number)
+    first_name , last_name = Name_generator(generate_number)
 
     # Define the list of possible medical conditions
     conditions = ['Diabetes', 'High Blood Pressure', 'Asthma', 'Arthritis', 'Cancer', 'Depression']
@@ -61,9 +101,14 @@ def main():
         record['Department'] = random.choice(department)
         record['Last Visit'] = date_generation(date(2022,1,1), date(2022,12,31))
         record['Encounter Description'] = random.choice(encounter_description)
-
         health_records.append(record)
-    fileOutput(health_records,record)
+    
+    return health_records
+
+def main():
+    health_records = BuildRecords()
+    FileOutput(health_records)
+    AppendToUserCollections(health_records)
 
 if __name__ == "__main__":
     main()

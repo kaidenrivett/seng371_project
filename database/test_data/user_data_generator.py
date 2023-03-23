@@ -26,7 +26,7 @@ def keyGenerator(first_name, last_name):
 def main():
     first_name = []
     last_name = []
-    generate_number = 100
+    generate_number = 30
     username_collections = []
     password_collections = []
     key_collections = []
@@ -49,10 +49,10 @@ def main():
         password_collections.append(password)
         key = keyGenerator(names.get_full_name().split()[0], names.get_full_name().split()[1])
         key_collections.append(key)
+    # only create 30 samples without patient
+    roles = ['Technician', 'Doctor']
 
-    roles = ['Technician', 'Doctor', 'Patient']
-
-    # Generate 100 app users
+    # Generate 30 app users
     app_users = []
     for i in range(1, generate_number+1):
         record = {}
