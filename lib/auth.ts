@@ -11,7 +11,7 @@ const role_access = {
 // Shouldn't really be hardcoded. Figure out secrets
 export const JWT_KEY = new TextEncoder().encode("higcyftdcfvgbhigyft7drtcfy")
 
-export type JwtClaims = {
+export type siteUser = {
     user_id: number,
     user_role: string,
     user_department: string,
@@ -20,7 +20,7 @@ export type JwtClaims = {
 // Authenticate the given request using the token cookie
 export async function authenticate(request: NextRequest): Promise<NextResponse> {
     const tokenCookie = request.cookies.get("token");
-    
+
     const loginUrl = request.nextUrl.clone()
     loginUrl.pathname = "/Login";
 
@@ -32,13 +32,13 @@ export async function authenticate(request: NextRequest): Promise<NextResponse> 
         return NextResponse.redirect(loginUrl);
     }
 
-    let token: JwtClaims;
-    
+    let token: siteUser;
+
     // Verify jwt
     try {
-        let jwt_payload = await jwtVerify(tokenCookie.value, JWT_KEY);
-        token = jwt_payload.payload as JwtClaims;
-    } catch(err) {
+        let jwtPayload = await jwtVerify(tokenCookie.value, JWT_KEY);
+        token = jwtPayload.payload as siteUser;
+    } catch (err) {
         console.log("Invalid jwt");
         return NextResponse.redirect(loginUrl);
     }
@@ -64,6 +64,19 @@ function canAccess(role: string, endpoint: string): boolean {
 
 // TODO
 // Get details from DB
-export function getUser(user: string, pass: string): JwtClaims | null {
-    return {user_id: 1, user_role: "doctor", user_department: "cardiology"}
+export function getUserFromDb(user: string, pass: string): siteUser | null {
+    return { user_id: 1, user_role: "doctor", user_department: "cardiology" }
+}
+
+export async function getUserDetails(tokenCookie: string | undefined): Promise<siteUser | null> {
+    if (tokenCookie == undefined) {
+        return null;
+    }
+
+    try {
+        let jwtPayload = await jwtVerify(tokenCookie, JWT_KEY);
+        return jwtPayload.payload as siteUser;
+    } catch (err) {
+        return null;
+    }
 }
