@@ -1,65 +1,38 @@
-import router from "next/router";
+import { useRouter } from "next/router";
 import {useState, useEffect} from "react";
 import { Avatar, Button, Chip, Container, Grid, List, ListItem, ListItemText, Paper, Stack, Typography } from "@mui/material";
 import {MonitorHeartIcon} from '@mui/icons-material';
 
 export default function Patient() {
-  // const [patient, setPatient] = useState(null);
-  // const id = router.query.id;
+  const [patient, setPatient] = useState(null);
+  const { query } = useRouter();
   
-  const testPatient = {
-    firstName: "Bryan",
-    lastName: "Taylor",
-    patientId: 1,
-    age: 76,
-    gender: "Male",
-    medicalConditions: ["Cancer", "Diabetes", "Asthma", "Heart Disease"],
-    height: 5.8,
-    weight: 150,
-    medication: "Albuterol",
-    dosage: 4,
-    department: "medicine",
-    bloodPressure: {
-      systolic: 120,
-      diastolic: 80,
-      pulse: 60,
-    },
-    encounters: [
-      {
-        date: "2021-11-10",
-        encounter: "Patient is doing well",
-      },
-      {
-        date: "2021-10-10",
-        encounter: "Patient is doing not well",
-      }
-    ],
-    observations: [
-      {
-        date: "2021-10-20",
-        observation: "Respiratory Rate",
-        value: 12,
-        unit: "breaths/min",
-      },
-      {
-        date: "2021-10-10",
-        observation: "Body Mass Index",
-        value: 25,
-        unit: "kg/m^2",
-      },
-    ]
-  }
-  const patient = testPatient;
+  
+  // const patient = testPatient;
 
-  // useEffect(() => {
-  //   fetch(`/api/patient/${id}`)
-  //     .then((res) => res.json())
-  //     .then((data) => setPatient(data));
-  // }, [id]);
+  useEffect(() => {
+    if(query.id !== undefined) {
+      getPatient(query.id)
+    }
+  }, [query.id]);
 
-  // useEffect(() => {
-  //   setPatient(testPatient)
-  // }, []);
+  const getPatient = async (id) => {
+    try{
+        const res = await fetch("/api/patient/".concat(id), {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+        const data = await res.json()
+        if(res.status === 200){
+            setPatient(data[0]);
+        }
+    }catch(error){
+        console.log("error occured:", error)
+        return 
+    }
+}
 
   return (
     patient ? 
