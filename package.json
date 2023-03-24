@@ -16,6 +16,7 @@
     "@emotion/styled": "^11.10.6",
     "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.11",
+    "@mui/x-data-grid": "^6.0.3",
     "@mui/types": "^7.2.3",
     "@next/font": "13.1.6",
     "csv-parser": "^3.0.0",
