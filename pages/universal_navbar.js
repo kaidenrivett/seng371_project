@@ -3,15 +3,25 @@ import { AppBar, Container, Toolbar, Typography, Box, IconButton, Button, Stack,
 import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Link from "next/link";
+import Cookies from "js-cookie";
 
 
 export default function UniversalNavBar () {
 
     const [name, setName] = useState("");
-    const [isLoggedIn, setIsLoggedIn] = useState(true);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [cookie, setCookie] = useState(Cookies.get("token"));
+
+    useEffect(() => {
+        console.log(cookie)
+        if(cookie !== undefined) {
+            setIsLoggedIn(true);
+        }
+    }, [cookie])
 
     const handleLogout = () => {
-        
+        Cookies.remove("token", {path: ""});
+        setIsLoggedIn(false);
     }
 
     return (
