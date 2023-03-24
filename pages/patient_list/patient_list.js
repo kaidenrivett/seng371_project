@@ -3,6 +3,7 @@ import {useState, useEffect} from "react";
 import { Avatar, Button, Chip, Container, Grid, List, ListItem, ListItemText, Paper, Stack, Typography, FormControlLabel, IconButton } from "@mui/material";
 import PersonIcon from '@mui/icons-material/Person';
 import { DataGrid, GridColDef, GridValueGetterParams} from "@mui/x-data-grid";
+import Cookies from "js-cookie";
 
 
 export default function PatientList({role, department}) {
@@ -11,6 +12,7 @@ export default function PatientList({role, department}) {
     const [isDoctor, setIsDoctor] = useState(true);
     const [dept, setDept] = useState("");
 
+    console.log(Cookies.get("token"))
 
     const PatientLink = ({index}) => {
 
