@@ -5,6 +5,7 @@ import { ThemeProvider, CssBaseline } from '@mui/material';
 import createEmotionCache from '../src/createEmotionCache';
 import theme from '../src/theme';
 import '../src/global.css';
+import UniversalNavBar from './universal_navbar';
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -15,6 +16,7 @@ const MyApp = (props) => {
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+        <UniversalNavBar />
         <Component {...pageProps} />
       </ThemeProvider>
     </CacheProvider>

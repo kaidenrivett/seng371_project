@@ -1,33 +1,24 @@
 import { useState, useEffect } from "react";
-import { AppBar, Container, Toolbar, Typography, Box, IconButton, Button, Stack, Item } from "@mui/material";
+import { AppBar, Container, Toolbar, Typography, Box, IconButton, Button, Stack, Item, Grid } from "@mui/material";
 import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import Link from "next/link";
 
 
-export default function UniversalNavBar ({username}) {
+export default function UniversalNavBar () {
 
-    const [name, setName] = useState("temp");
-
-    const handleHomeClick = () => {
-        console.log("clicked home")
-    }
-
-    const handlePatientListClick = () => {
-        console.log("clicked patient list")
-    }
-
-    const handlePatientRecordsClick = () => {
-        console.log("clicked patient records")
-    }
+    const [name, setName] = useState("");
+    const [isLoggedIn, setIsLoggedIn] = useState(true);
 
     const handleLogout = () => {
-        console.log("clicked logout")
+        
     }
 
     return (
-        <Box>
-            <AppBar position="static">
-                <Toolbar>
+        <AppBar position="static">
+            <Toolbar>
+            <Grid container direction="row" alignItems="center">
+                
                     <HealthAndSafetyIcon/>
                     <Typography
                         variant="h5"
@@ -35,27 +26,23 @@ export default function UniversalNavBar ({username}) {
                     >
                         Electronic Health Records    
                     </Typography>
-                    <Stack 
-                        direction="row"
-                        spacing={2}
-                        justifyContent="center"
-                    >
-                        <Button sx={{ml: "4rem", mr: "2rem"}} variant="inherit" onClick={handleHomeClick}>Home</Button>
-                        <Button sx={{mx: "2rem"}} variant="inherit" onClick={handlePatientListClick}>Patient List</Button>
-                        <Button sx={{mx: "2rem"}} variant="inherit" onClick={handlePatientRecordsClick}>Patient Records</Button>
-                    </Stack>
-                    <Stack
-                        direction="row"
-                        spacing={2}
-                        justifyContent="flex-end"
-                    >
-                        <Typography variant="inherit"> {name} </Typography>
-                        <AccountCircleIcon fontSize="medium" variant="inherit"/>
-                        <Button color="inherit" onClick={handleLogout}>Logout</Button>
-                    </Stack>   
                     
-                </Toolbar>
-            </AppBar>
-    </Box>
+            </Grid>
+            {isLoggedIn ? 
+                <Grid container direction="row" justifyContent="flex-end" alignItems="center">
+                    <Typography variant="inherit"> {name} </Typography>
+                    <AccountCircleIcon fontSize="medium" variant="inherit"/>
+                    <Link href="/Login">
+                        <Button color="inherit" onClick={handleLogout}>Logout</Button>
+                    </Link>
+                    
+                </Grid>
+                : null
+            }
+            
+            </Toolbar>
+            
+        </AppBar>
+        
     )
 }
