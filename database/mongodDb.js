@@ -1,9 +1,10 @@
 import { MongoClient } from 'mongodb';
-import { config } from 'dotenv';
+import * as dotenv from 'dotenv';
 
-config();
+dotenv.config();
 
-const uri = config().MONGODB_URI;
+const uri = process.env.MONGODB_URI;
+console.log(uri);
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 async function connectToDatabase() {
