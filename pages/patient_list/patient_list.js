@@ -8,7 +8,7 @@ import router from "next/router";
   import Link from "next/link";
   
   
-  export default function PatientList({role, department}) {
+  export default function PatientList() {
   
       const [isDoctor, setIsDoctor] = useState(false);
       const [dept, setDept] = useState("");
