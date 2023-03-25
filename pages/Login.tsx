@@ -31,10 +31,8 @@ export default function Login() {
             });
         
         // Login successful
-        let respBody = await response.json();
-
-        if (respBody.location) {
-            window.location.href = respBody.location
+        if (response.status == 200) {
+            window.location.href = "/";
         }
     }
 
