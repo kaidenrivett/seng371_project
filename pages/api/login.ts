@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-import { getUserFromDb, JWT_KEY } from "@lib/auth";
+import { getUserClaims, JWT_KEY } from "@lib/auth";
 import { SignJWT } from 'jose';
 
 type RequestData = {
@@ -9,17 +9,14 @@ type RequestData = {
     pass: string
 }
 
-type ResponseData = {
-    location: string
-}
-
 export default async function handler(
     req: NextApiRequest,
-    res: NextApiResponse<ResponseData>
+    res: NextApiResponse
 ) {
     // Wrong method
     if (req.method != "POST") {
-        res.status(405);
+        console.log("Wrong method");
+        res.status(405).send("");
         return;
     }
 
@@ -29,15 +26,17 @@ export default async function handler(
 
     // Fields missing
     if (!userData.user || !userData.pass) {
-        res.status(400)
+        console.log("Fields missing");
+        res.status(400).send("");
         return;
     }
 
-    let jwtClaims = getUserFromDb(userData.user, userData.pass);
+    let jwtClaims = await getUserClaims(userData.user, userData.pass);
 
     // Login failed
     if (jwtClaims == null) {
-        res.status(401);
+        console.log("Login failed");
+        res.status(401).send("");
         return;
     }
 
@@ -48,5 +47,6 @@ export default async function handler(
     let header = "token=" + token +"; Path=/";
 
     res.setHeader("Set-Cookie", header);
-    res.json({location: "/"});
+    res.status(200).json({location: "/"});
+    console.log("Login successful");
 }

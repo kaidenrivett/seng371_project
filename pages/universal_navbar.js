@@ -56,3 +56,7 @@ export default function UniversalNavBar () {
         
     )
 }
+
+export async function getServerSideProps(context) {
+  return authenticate(context);
+}

@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import {useState, useEffect} from "react";
 import { Avatar, Button, Chip, Container, Grid, List, ListItem, ListItemText, Paper, Stack, Typography } from "@mui/material";
 import {MonitorHeartIcon} from '@mui/icons-material';
+import { authenticate } from "@lib/auth";
 
 export default function Patient() {
   const [patient, setPatient] = useState(null);
@@ -150,4 +151,8 @@ export default function Patient() {
       </Grid>
     </Container> : null
   );
+}
+
+export async function getServerSideProps(context) {
+  return authenticate(context);
 }
