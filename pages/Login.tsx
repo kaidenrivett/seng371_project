@@ -32,6 +32,7 @@ export default function Login() {
         
         // Login successful
         if (response.status == 200) {
+            localStorage.setItem("username", username);
             window.location.href = "/";
         }
     }
