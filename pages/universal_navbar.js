@@ -11,10 +11,12 @@ export default function UniversalNavBar () {
     const [name, setName] = useState("");
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [cookie, setCookie] = useState(Cookies.get("token"));
+    const [user, setUser] = useState("")
 
     useEffect(() => {
         console.log(cookie)
         if(cookie !== undefined) {
+            setUser(localStorage.getItem("username"))
             setIsLoggedIn(true);
         }
     }, [cookie])
@@ -40,7 +42,7 @@ export default function UniversalNavBar () {
             </Grid>
             {isLoggedIn ? 
                 <Grid container direction="row" justifyContent="flex-end" alignItems="center">
-                    <Typography variant="inherit"> {name} </Typography>
+                    <Typography variant="inherit"> {user} </Typography>
                     <AccountCircleIcon fontSize="medium" variant="inherit"/>
                     <Link href="/Login">
                         <Button color="inherit" onClick={handleLogout}>Logout</Button>
