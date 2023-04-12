@@ -53,10 +53,6 @@ export default function PrimarySearchAppBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <Typography
-          >
-            MUI
-          </Typography>
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
@@ -66,11 +62,8 @@ export default function PrimarySearchAppBar() {
               inputProps={{ 'aria-label': 'search' }}
             />
           </Search>
-              <MoreIcon />
         </Toolbar>
       </AppBar>
-      {renderMobileMenu}
-      {renderMenu}
     </Box>
   );
 }

@@ -6,6 +6,7 @@ import createEmotionCache from '../src/createEmotionCache';
 import theme from '../src/theme';
 import '../src/global.css';
 import UniversalNavBar from './universal_navbar';
+import SearchBar from './search_bar'
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -17,6 +18,7 @@ const MyApp = (props) => {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <UniversalNavBar />
+        < SearchBar/>
         <Component {...pageProps} />
       </ThemeProvider>
     </CacheProvider>
