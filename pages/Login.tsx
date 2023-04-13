@@ -54,6 +54,7 @@ export default function Login() {
                         onChange={(e) => setPassword(e.target.value)}
                         value={password}
                         fullWidth
+                        type='password'
                         required />
                     <Button type='submit'
                         color='primary'
