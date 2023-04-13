@@ -5,6 +5,7 @@ import { DataGrid } from "@mui/x-data-grid";
 import Cookies from "js-cookie";
 import Link from "next/link";
 import { authenticate } from "@lib/auth";
+import { GridToolbar } from "@mui/x-data-grid";
 
 
 export default function PatientList({ user }) {
@@ -307,6 +308,9 @@ export default function PatientList({ user }) {
           <Grid item xs={12}>
             <Paper elevation={8} sx={{ borderRadius: "12px" }} className="h-500 p-6 my-2">
               <DataGrid
+              components={{
+               Toolbar: GridToolbar
+             }}
                 autoHeight={true}
                 rows={rows}
                 columns={columns}
